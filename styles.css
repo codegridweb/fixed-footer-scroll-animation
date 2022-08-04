@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+}
+
+html,
+body {
+  background-color: #f9f7f0;
+}
+
+.content_inner {
+  width: 90%;
+  margin: 40px 40px 420px 40px;
+  padding: 100px;
+}
+
+.copy {
+  background: #e9e6dc;
+  border: 1px solid #2e2e27;
+  border-radius: 40px;
+}
+
+h1 {
+  color: #111;
+  font-family: "New Eddy Display";
+  font-size: 5em;
+  padding: 0 0 20px 0;
+}
+
+p {
+  font-size: 0.8em;
+  letter-spacing: 0.1px;
+  line-height: 30px;
+  padding: 0 0 40px 0;
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+  text-align: justify;
+}
+
+.fixed_footer {
+  width: 100%;
+  height: 350px;
+  background: #f9f7f0;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1px;
+  line-height: 30px;
+}
+
+.col li:first-child {
+  font-weight: bolder;
+}
+
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Monument Extended";
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.1px;
+  line-height: 30px;
+  opacity: 0.5;
+  margin: 6em 0 0 0;
+}

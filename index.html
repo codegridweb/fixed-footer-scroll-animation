@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>footer scroll animation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <main class="content">
+      <div class="content_inner copy">
+        <h1>Scroll Down</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. A rerum
+          blanditiis soluta nesciunt doloremque voluptate earum tempore fugit
+          eveniet veritatis adipisci magni alias vitae dignissimos incidunt
+          repellat ea quisquam amet eligendi perspiciatis pariatur excepturi
+          magnam omnis aliquam quo aperiam non quibusdam sit molestiae ex. Quasi
+          ipsa libero magnam maiores delectus.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi vitae
+          perferendis natus porro voluptate molestias deserunt impedit numquam
+          recusandae ducimus dolorem facilis qui autem dolorum quam omnis
+          repellendus asperiores neque excepturi ipsa! Rerum corrupti similique
+          adipisci dolorem cupiditate modi veritatis eum doloribus placeat at
+          quos explicabo et quidem! Illo incidunt obcaecati quo rem nesciunt
+          dolorum fugit vitae voluptates eaque soluta!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad eligendi
+          voluptates suscipit nesciunt nisi illo placeat qui voluptas quas vero
+          voluptatibus eius in voluptate. Itaque eius nobis error id ullam
+          officiis consectetur? Laboriosam commodi excepturi distinctio
+          voluptas. Quam mollitia culpa ipsa? Modi magni officiis quibusdam
+          nulla eum magnam quo in distinctio quis deleniti aliquid minima cum.
+          Assumenda magni quae incidunt aliquam? Omnis eum aspernatur molestiae
+          provident in quod delectus dolor sint vero? Quibusdam tempore
+          similique.
+        </p>
+        <h1>Some more, please!</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet eum
+          aspernatur quibusdam ad provident molestiae adipisci numquam vitae
+          molestias quidem vero nostrum voluptates harum! Vero veniam adipisci
+          minima corporis quidem sunt omnis illum similique consectetur enim
+          atque autem distinctio quas deserunt ex amet itaque ipsa cumque sed
+          asperiores doloremque aliquid praesentium nihil tenetur cum aliquam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
+          ratione blanditiis vero rem cupiditate magni praesentium veniam
+          quibusdam dicta recusandae? Fugit fuga debitis inventore possimus
+          distinctio perferendis.
+        </p>
+      </div>
+    </main>
+    <footer class="fixed_footer">
+      <div class="content">
+        <div class="content_inner">
+          <div class="nav">
+            <div class="col">
+              <li>Menu</li>
+              <li>Home</li>
+              <li>Projects</li>
+              <li>About</li>
+              <li>Contact</li>
+            </div>
+            <div class="col">
+              <li>Shop</li>
+              <li>Products</li>
+              <li>Digitals</li>
+              <li>FAQs</li>
+              <li>Reviews</li>
+            </div>
+            <div class="col">
+              <li>Projects</li>
+              <li>Outside</li>
+              <li>Fair Trade</li>
+              <li>Peace</li>
+              <li>Honest</li>
+            </div>
+            <div class="col">
+              <li>Contact</li>
+              <li>Text</li>
+              <li>Email</li>
+              <li>Social Media</li>
+              <li>Call</li>
+            </div>
+          </div>
+          <div class="copyright">
+            <span>2022. All rights reserved.</span>
+            <span>Site by <u>Codegrid</u></span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      gsap.from(".fixed_footer", {
+        y: -500,
+        scrollTrigger: {
+          trigger: ".content",
+          start: "bottom bottom",
+          scrub: true,
+        },
+      });
+    </script>
+  </body>
+</html>
